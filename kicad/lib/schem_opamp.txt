@@ -1,0 +1,10 @@
+<vampidj> csrf: when you insert it into the schematic, there should be a submenu for that symbol (expand the triangle on the left next to its name) for each unit; for however many packages you want to insert, insert that many copies of the same unit (e.g. 2x unit A and 1x unit B would be for 2 chips).
+<csrf> vampidj, thank u sir
+<vampidj> csrf: when you select each unit in the choose symbol dialog it will give you a preview on the right showing pin numbers to give you a better idea of how this works.
+<csrf> ok
+<vampidj> furthermore it will automatically progress to insert each additional unit once you've placed the first one. so if you add unit A, and then place it on the schematic, the next thing you place will be unit B, and then unit C, and so on.
+<vampidj> (until you hit esc to cancel insert)
+<vampidj> so for a single chip with 4 opamps, you'd have 5 units (4 for the amps themselves, and 1 for the shared power supply pins)
+<vampidj> units A through D would be the amps, unit E would be the power, so symbol "U1E" is the power pins for units U1A through U1D, and symbol U2E is the power pins for units U2A through U2D.
+<vampidj> (once you annotate the schematic, that is)
+<vampidj> this is better than having all 4 opamps in one large symbol because it gives you the freedom to place individual opamps anywhere on the schematic but still have them as a single chip to place in one position on the PCB.
